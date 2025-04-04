@@ -24,7 +24,7 @@ const Profile = () => {
                     <Sidebar />
                     <div className="flex-1 md:ml-[200px] min-h-[calc(100vh-50px)]">
                         {/* desktop sub-head section */}
-                        <div className="hidden md:flex bg-black w-full h-12 border-b border-primary-300 justify-between px-4 sticky top-[50px] z-10">
+                        <div className="hidden md:flex bg-black w-full h-12 border-b border-t border-primary-300 justify-between px-4 sticky top-[50px] z-10">
                             <div className="flex">
                                 <button
                                     className={`h-full border-r-1 cursor-pointer border-primary-300 px-4 transition-colors flex items-center ${activeTab === "overview"
@@ -63,7 +63,7 @@ const Profile = () => {
                                     Media
                                 </button>
                             </div>
-                            <div className="flex w-[88px] items-center border-l border-primary-300 pl-4">
+                            <div className="flex w-[88px] items-center border-l text-white hover:text-zinc-500 cursor-pointer border-primary-300 pl-4">
                                 <h1>More</h1>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ const Profile = () => {
                                                         <img className="w-10 h-10 rounded" src={company} alt="company" />
                                                         <div className="flex flex-col px-2">
                                                             <div className="flex items-center">
-                                                                <span className=" text-[16px] me-2"> Company</span>
+                                                                <span className=" text-[16px] me-2 mb-1"> Company</span>
                                                                 <span className=" text-[8px] font-bold py-1 px-2 bg-blue-200 text-black rounded "> PROPRECTOR</span>
                                                             </div>
                                                             <div className="flex items-center">

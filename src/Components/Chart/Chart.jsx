@@ -33,7 +33,7 @@ const Chart = () => {
     return (
         <div className='flex flex-col h-full'>
             {/* dropdown controls */}
-            <div className='flex flex-wrap gap-2'>
+            <div className='flex flex-nowrap gap-1 md:gap-2'>
                 <div className="relative">
                     <button
                         className="flex items-center bg-black px-3 py-1.5 rounded-lg text-sm border border-primary-300"
@@ -59,7 +59,7 @@ const Chart = () => {
                         className="flex items-center bg-black px-3 py-1.5 rounded-lg text-sm border border-primary-300"
                         onClick={() => setShowDayDropdown(!showDayDropdown)}
                     >
-                        <span>Last 30 Days</span>
+                        <span className='text-nowrap'>Last 30 Days</span>
                         <ChevronDown className="ml-2 w-4 h-4" style={{ transform: showDayDropdown ? 'rotate(180deg)' : 'rotate(0deg)' }}  />
                     </button>
                     {showDayDropdown && (
@@ -97,21 +97,21 @@ const Chart = () => {
             </div>
 
             {/* metrics display */}
-            <div className='flex flex-wrap mb-4'>
+            <div className='flex flex-row  mb-4'>
                 <div className='flex min-w-[150px] items-center flex-row p-3'>
-                    <div className='flex me-3'>
-                        <h1 className='text-3xl text-white font-bold'>13.49k</h1>   
+                    <div className='flex md:me-3 me-1'>
+                        <h1 className='md:text-3xl text-2xl text-white font-bold'>13.49k</h1>   
                     </div>
-                    <div className='flex flex-col items-start mt-1 pe-5 md:border-r-2 border-primary-300'>
+                    <div className='flex flex-col items-start mt-1  pe-2md:pe-5 md:border-r-2 border-primary-300'>
                         <div className='text-emerald-500 text-sm'>+469%</div>
                         <span className='text-gray-500 text-sm ml-2'>(897)</span>
                     </div>
                 </div>
                 
                 <div className='flex min-w-[150px] flex-row p-3'>
-                    <div className='flex items-center me-3'>
-                        <span className='w-2 h-2 rounded-full bg-purple-500 mr-2'></span>
-                        <h1 className='text-3xl text-white font-bold'>3.49k</h1>
+                    <div className='flex items-center md:me-3 me-1'>
+                        <span className='w-2 h-2 rounded-full bg-purple-500  mr-2 md:mr-2'></span>
+                        <h1 className='md:text-3xl text-3xl  text-white font-bold'>3.49k</h1>
                     </div>
                     <div className='flex flex-col items-end mt-1'>
                         <div className='text-emerald-500 text-sm'>+180%</div>
@@ -121,7 +121,7 @@ const Chart = () => {
             </div>
 
             {/* chart container */}
-            <div className='flex-1 min-h-[220px]'>
+            <div className=' flex-1  min-h-[220px]'>
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={data} margin={{ top: 5, right: 10, left: 0, bottom: 2 }}  throttleDelay={100}>
                         <CartesianGrid 
