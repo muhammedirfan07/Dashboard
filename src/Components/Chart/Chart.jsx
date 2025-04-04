@@ -44,7 +44,7 @@ const Chart = () => {
                         
                     </button>
                     {showMetricsDropdown && (
-                        <div className="absolute top-full left-0 mt-1 bg-black border border-primary-300 rounded-lg w-40 z-10">
+                        <div className="absolute top-full left-0 mt-1 bg-black border border-primary-300 rounded-lg w-30 md:w-40 z-10">
                             {['Visitors', 'Connections', 'Interactions', 'Impressions'].map((item) => (
                                 <div key={item} className="py-1.5 px-3 hover:bg-primary-300 cursor-pointer">
                                     {item}
@@ -63,7 +63,7 @@ const Chart = () => {
                         <ChevronDown className="ml-2 w-4 h-4" style={{ transform: showDayDropdown ? 'rotate(180deg)' : 'rotate(0deg)' }}  />
                     </button>
                     {showDayDropdown && (
-                        <div className="absolute top-full left-0 mt-1 bg-black border border-primary-300 rounded-lg w-40 z-10">
+                        <div className="absolute top-full left-0 mt-1 bg-black border border-primary-300 rounded-lg w-30 md:w-40 z-10">
                             {['Today', 'Yesterday', 'This Week', 'Last 7 days', 'Last 30 days'].map((item) => (
                                 <div key={item} className="py-1.5 px-3 hover:bg-primary-300 cursor-pointer">
                                     {item}
@@ -85,7 +85,7 @@ const Chart = () => {
                         <span>Add</span>
                     </button>
                     {addDropdown && (
-                        <div className="absolute top-full left-0 mt-1 bg-black border border-primary-300 rounded-lg w-40 z-10">
+                        <div className="absolute right-0 mt-2 bg-black border border-primary-300 rounded-lg w-30 md:w-40 z-10 shadow-lg">
                             {['Visitors', 'Connections', 'Interactions', 'Impressions'].map((item) => (
                                 <div key={item} className="py-1.5 px-3 hover:bg-primary-300 cursor-pointer">
                                     {item}

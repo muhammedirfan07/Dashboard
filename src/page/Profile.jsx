@@ -175,7 +175,7 @@ const Profile = () => {
                                         <div className=" bg-black rounded-lg p-3 shadow-2xl border-1 border-primary-300 ">
                                             <div className="flex flex-col p-2 h-[300px] justify-baseline space-y-4">
                                                 <h1 className="font-bold mb-2"> Founded Companies</h1>
-                                                <h1 className="text-5xl font-bold px-3">02</h1>
+                                                <h1 className="text-5xl font-[arial] font-bold px-3">02</h1>
                                                 {/* vertx */}
                                                 <div className="flex justify-between">
                                                     <div className="flex w-[45%] items-center ">

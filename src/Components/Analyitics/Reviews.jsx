@@ -19,7 +19,7 @@ const Reviews = () => {
                                 />
                             </button>
                             {showMetricsDropdown && (
-                                <div className="absolute right-0 mt-2 bg-black border border-primary-300 rounded-lg w-40 z-10 shadow-lg">
+                                <div className="absolute right-0 mt-2 bg-black border border-primary-300 rounded-lg w-30 md:w-40 z-10 shadow-lg">
                                     {['Visitors', 'Connections', 'Interactions', 'Impressions'].map((item) => (
                                         <div
                                             key={item}
