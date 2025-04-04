@@ -141,7 +141,7 @@ const Profile = () => {
 
                                                         {/* Position */}
                                                         <div className="flex  ">
-                                                            <h3 className="text-sm md:text-base  text-nowrap text-gray-400 mb-4 me-3">Co-Founder & CEO @ Vertx</h3>
+                                                            <h3 className="text-[10px] md:text-base  text-nowrap text-gray-400 mb-4 me-3">Co-Founder & CEO @ Vertx</h3>
                                                             <img className="h-5 w-5 rounded  mb-[-5px]" src={vertx} alt="vertx" />
 
                                                         </div>
@@ -153,14 +153,14 @@ const Profile = () => {
                                                         </div>
                                                     </div>
                                                     {/* Social Icons */}
-                                                    <div className="flex justify-end md:ps-0 ps-3  md:justify-start align-top gap-4 md:gap-6 mt-[24%] sm:t-[10%] md:mt-[5%]  lg:mt-[2%]">
-                                                        <div className="w-8 cursor-pointer h-8 md:w-10 md:h-10">
+                                                    <div className="flex  md:ps-0 ps-3   justify-start align-top gap-4 md:gap-6 mt-[28%] sm:t-[%] md:mt-[5%]  lg:mt-[2%]">
+                                                        <div className="w-6 cursor-pointer h-6 md:w-10 md:h-10">
                                                             <img className="w-full h-full" src={linkedin} alt="LinkedIn" />
                                                         </div>
-                                                        <div className="w-8 cursor-pointer h-8 md:w-10 md:h-10">
+                                                        <div className="w-6 cursor-pointer h-6 md:w-10 md:h-10">
                                                             <img className="w-full h-full" src={twitter} alt="Twitter" />
                                                         </div>
-                                                        <div className="w-8 h-8 cursor-pointer md:w-10 md:h-10">
+                                                        <div className="w-6 h-6 cursor-pointer md:w-10 md:h-10">
                                                             <img className="w-full h-full" src={gmail} alt="Gmail" />
                                                         </div>
                                                     </div>

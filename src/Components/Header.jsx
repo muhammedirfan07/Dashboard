@@ -55,7 +55,7 @@ const Header = () => {
            <div className='flex justify-center flex-1'>
             <img 
               className='h-10 object-contain' 
-              onClick={()=>navigate("/")}
+              onClick={()=>navigate("/analytic")}
               src={icon} 
               alt="Logo" 
             />
