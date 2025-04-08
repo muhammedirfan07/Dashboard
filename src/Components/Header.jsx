@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <>
     {/*  desktop */}
-     <nav className='hidden bg-black md:block w-full h-[50px] border-b-1 border-primary-300 fixed top-0 left-0 z-10'>
+     <nav className='hidden bg-black md:block w-full h-[50px] border-b-1 border-primary-300 fixed top-0 left-0 z-100'>
        <div className='flex  justify-between h-full px-3'>
         {/* left */}
         <div className=' flex w-[188px] space-x-4 items-center border-r-1 border-primary-300'>

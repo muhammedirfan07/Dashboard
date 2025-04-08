@@ -8,7 +8,7 @@ const Subheader = ({ activeTab, setActiveTab }) => {
     return (
         <>
             {/* desktop sub-head section */}
-            <div className="hidden  md:flex bg-black w-full h-12 border-b border-primary-300 border-t  justify-between px-4 sticky top-[50px] z-10">
+            <div className="hidden  md:flex bg-black w-full h-12 border-b border-primary-300 border-t  justify-between px-4 sticky top-[50px] z-100">
                 <div className="flex">
                     <button
                         className={`h-full border-r-1 border-primary-300 px-4 transition-colors cursor-pointer flex items-center ${activeTab === "overview"
